@@ -2,24 +2,31 @@
 h1 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 175%;
 }
 
 h2 {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: -1px;
+    right: -1px;
     width: 100px;
     text-align: center;
+    font-size: 125%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid black;
 }
 
 p {
+    padding: 5px;
     margin-top: 40px;
+    font-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .section {
     background-color: rgb(206, 199, 199);
     position: relative;
+    border: 1px solid black;
 }
 
 #beef {
@@ -40,13 +47,61 @@ p {
 }
 
 .container {
+    margin-top: 50px;
     width: 100%;
 }
 
+/*** Desktop View ***/
 @media (min-width: 992px) {
     .section {
         float: left;
-        width: 32%;
-        margin: 0.65%;
+        width: 26.6%;
+        margin-bottom: 20px;
+    }
+    .desktop1{
+        margin-left: 5%;
+        margin-right: 2.5%;
+    }
+    .desktop2 {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+    .desktop3 {
+        margin-left: 2.5%;
+        margin-right: 5%;
+    }
+}
+
+/*** Tablet View ***/
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        float: left;
+        margin-bottom: 20px;
+    }
+    .tablet1 {
+        width: 42.5%;
+        margin-left: 5%;
+        margin-right: 2.5%;
+    }
+    .tablet2 {
+        width: 42.5%;
+        margin-left: 2.5%;
+        margin-right: 5%;
+    }
+    .tablet3{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/*** Mobile View ***/
+@media (max-width: 767px) {
+    .section {
+        float: left;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20px;
     }
 }
